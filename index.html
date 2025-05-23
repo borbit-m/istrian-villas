@@ -4,93 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Istrian Villas</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">Istrian Villas</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#villas">Villas</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Villas</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero" style="background-image: url('images/background-page-test.jpg');">
-    <div class="hero-content">
-      <h1>Welcome to Istrian Villas</h1>
-      <p>Experience luxury and comfort in the heart of Istria</p>
-      <a href="#contact" class="btn">Book Now</a>
-    </div>
-  </section>
-
-  <!-- Villas Section -->
-  <section id="villas" class="villas container">
-    <h2>Our Villas</h2>
-    <div class="villa-grid">
-      <div class="villa-card">
-        <a href="Villa_Zara/index.html">
-          <img src="images/Villa_Zara/villa_zara_pic.jpg" alt="Villa Zara" />
-          <h3>Villa Zara</h3>
-        </a>
+  <main>
+    <section class="villas-section">
+      <h1>Our Villas</h1>
+      <div class="villa-cards">
+        <div class="villa-card">
+          <img src="images/Villa_Zara/villa_zara_pic.JPG" alt="Villa Zara" />
+          <h2>Villa Zara</h2>
+        </div>
+        <div class="villa-card">
+          <img src="images/Villa_Laura/villa_laura_pic.JPG" alt="Villa Laura" />
+          <h2>Villa Laura</h2>
+        </div>
+        <div class="villa-card">
+          <img src="images/Villa_Vale/villa_vale_pic.JPG" alt="Villa Vale" />
+          <h2>Villa Vale</h2>
+        </div>
       </div>
-      <div class="villa-card">
-        <a href="Villa_Laura/index.html">
-          <img src="images/Villa_Laura/villa_laura_pic.jpg" alt="Villa Laura" />
-          <h3>Villa Laura</h3>
-        </a>
-      </div>
-      <div class="villa-card">
-        <a href="Villa_Vale/index.html">
-          <img src="images/Villa_Vale/villa_vale_pic.jpg" alt="Villa Vale" />
-          <h3>Villa Vale</h3>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location Section -->
-  <section id="location" class="location container">
-    <h2>Our Location</h2>
-    <div class="map-wrapper">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.317604433336!2d14.101922215840677!3d45.13084155917753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47634d7ce68eb081%3A0xdbda2ee71343e6d5!2sVilla%20Zara!5e0!3m2!1sen!2shr!4v1716578327726!5m2!1sen!2shr"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </section>
-
-  <!-- Guest Reviews -->
-  <section id="reviews" class="reviews container">
-    <h2>Guest Reviews</h2>
-    <div class="review">
-      <strong>
-        <a href="https://www.google.com/maps/contrib/109904436111779261555/reviews?hl=en-US" target="_blank" rel="noopener noreferrer">Rob Zahtila</a>
-      </strong>
-      <span class="stars">★★★★★</span>
-      <p>"A short break at Villa Zara. Hosts were wonderful and the property beautiful. Picturesque outlook over vineyards with mountains in the distance. A first class property and holiday."</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact container">
-    <h2>Contact Us</h2>
-    <form action="mailto:istrianvillazara@gmail.com" method="post" enctype="text/plain" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
