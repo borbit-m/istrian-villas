@@ -33,7 +33,7 @@
   </section>
 
   <!-- Villas Section -->
-  <section id="villas" class="villas">
+  <section id="villas" class="villas container">
     <h2>Our Villas</h2>
     <div class="villa-grid">
       <div class="villa-card">
@@ -58,21 +58,20 @@
   </section>
 
   <!-- Location Section -->
-  <section id="location" class="location">
+  <section id="location" class="location container">
     <h2>Our Location</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.317604433336!2d14.101922215840677!3d45.13084155917753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47634d7ce68eb081%3A0xdbda2ee71343e6d5!2sVilla%20Zara!5e0!3m2!1sen!2shr!4v1716578327726!5m2!1sen!2shr"
-      width="100%"
-      height="450"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.317604433336!2d14.101922215840677!3d45.13084155917753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47634d7ce68eb081%3A0xdbda2ee71343e6d5!2sVilla%20Zara!5e0!3m2!1sen!2shr!4v1716578327726!5m2!1sen!2shr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </section>
 
   <!-- Guest Reviews -->
-  <section id="reviews" class="reviews">
+  <section id="reviews" class="reviews container">
     <h2>Guest Reviews</h2>
     <div class="review">
       <strong>
@@ -84,13 +83,13 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact container">
     <h2>Contact Us</h2>
-    <form action="mailto:istrianvillazara@gmail.com" method="post" enctype="text/plain">
+    <form action="mailto:istrianvillazara@gmail.com" method="post" enctype="text/plain" class="contact-form">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send</button>
     </form>
   </section>
 </body>
