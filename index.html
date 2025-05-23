@@ -1,176 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Villa Zara Santalezi</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Istrian Villas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#">Villas</a></li>
-      <li><a href="#">Special Offers</a></li>
-      <li><a href="#">Istria</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#contact-form-section">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>Villa Zara Santalezi</h1>
-    <p>Luxury Retreat in the Heart of Istria</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Istrian Villas</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#villas">Villas</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="about-section">
-      <div class="container">
-        <h2>About the Villa</h2>
-        <p class="lead-text">
-          Discover tranquility at Villa Zara in Santalezi, a stunning 4-bedroom villa with private pool, surrounded by nature. Perfect for family vacations or a peaceful escape, just a short drive from Istria's coast.
-        </p>
+  <!-- Hero Section -->
+  <section id="hero" class="hero" style="background-image: url('images/background-page-test.jpg');">
+    <div class="hero-content">
+      <h1>Welcome to Istrian Villas</h1>
+      <p>Experience luxury and comfort in the heart of Istria</p>
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Villas Section -->
+  <section id="villas" class="villas">
+    <h2>Our Villas</h2>
+    <div class="villa-grid">
+      <div class="villa-card">
+        <img src="images/Villa-View.jpg" alt="Villa View">
+        <h3>Villa View</h3>
+        <p>Scenic views of vineyards and Istrian hills.</p>
       </div>
-    </section>
-
-    <section class="features-section">
-      <div class="container">
-        <h2>Villa Features</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <i class="fas fa-bed"></i>
-            <h3>4 Bedrooms</h3>
-            <p>Comfortable sleeping arrangements</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-swimming-pool"></i>
-            <h3>Private Pool</h3>
-            <p>Refreshing outdoor pool</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-wifi"></i>
-            <h3>Free Wi-Fi</h3>
-            <p>High-speed internet access</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-utensils"></i>
-            <h3>Equipped Kitchen</h3>
-            <p>Modern cooking facilities</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-snowflake"></i>
-            <h3>Air Conditioning</h3>
-            <p>Climate control throughout</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-parking"></i>
-            <h3>Parking</h3>
-            <p>Private parking space</p>
-          </div>
-        </div>
+      <div class="villa-card">
+        <img src="images/Living-Area.jpg" alt="Living Area">
+        <h3>Living Area</h3>
+        <p>Modern and spacious interiors for relaxation.</p>
       </div>
-    </section>
-
-    <section class="gallery-section">
-      <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/ASMAJIC784/ASMAJIC784.github.io/main/Villa-View.jpg" alt="Villa view">
-            <div class="gallery-overlay">
-              <span>Villa Exterior</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/ASMAJIC784/ASMAJIC784.github.io/main/Living-Area.jpg" alt="Living area">
-            <div class="gallery-overlay">
-              <span>Living Area</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/ASMAJIC784/ASMAJIC784.github.io/main/Pool-View.jpg" alt="Pool view">
-            <div class="gallery-overlay">
-              <span>Pool Area</span>
-            </div>
-          </div>
-        </div>
+      <div class="villa-card">
+        <img src="images/Pool-View.jpg" alt="Pool View">
+        <h3>Pool View</h3>
+        <p>Private pool with a tranquil ambiance.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact-form-section">
-      <h2>Contact</h2>
-      <form action="mailto:istrianvillazara@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Name</label>
-        <input id="name" name="Name" required>
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.317604433336!2d14.101922215840677!3d45.13084155917753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47634d7ce68eb081%3A0xdbda2ee71343e6d5!2sVilla%20Zara!5e0!3m2!1sen!2shr!4v1716578327726!5m2!1sen!2shr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
-        <label for="email">Email</label>
-        <input id="email" type="email" name="Email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="Message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Location</h2>
-      <div class="map-wrapper">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.830162421024!2d14.099347575938323!3d45.130841555619725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47634d7ce68eb081%3A0xdbda2ee71343e6d5!2sVilla%20Zara!5e1!3m2!1sen!2sus!4v1748031042423!5m2!1sen!2sus" 
-          width="100%" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </section>
-    <section>
-  <h2>Guest Reviews</h2>
-  <div class="guest-reviews-container">
-    <div class="review-item">
-      <strong>
-         <a href="https://www.google.com/maps/contrib/109904436111779261555/reviews?hl=en-US" target="_blank" rel="noopener noreferrer">
-          Rob Zahtila
-        </a>
-      </strong> <span class="review-stars">★★★★★</span>
+  <!-- Guest Reviews -->
+  <section id="reviews" class="reviews">
+    <h2>Guest Reviews</h2>
+    <div class="review">
+      <strong><a href="https://www.google.com/maps/contrib/109904436111779261555/reviews?hl=en-US" target="_blank">Rob Zahtila</a></strong>
+      <span class="stars">★★★★★</span>
       <p>"A short break at Villa Zara. Hosts were wonderful and the property beautiful. Picturesque outlook over vineyards with mountains in the distance. A first class property and holiday."</p>
     </div>
-    <div class="review-item">
-      <strong>
-       <a href="https://www.google.com/maps/contrib/110377431390074316967/reviews/@37.6440127,23.9728214,2843887m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-         Marco Rodler
-        </a>
-      </strong> <span class="review-stars">★★★★★</span>
-      <p>"Very nice accommodation, we were there with a group of 10 friends and had everything our hearts desired!"</p>
-    </div>
-    <div class="review-item">
-      <strong>
-          <a href="https://www.google.com/maps/contrib/106928018931436560052/reviews/@49.1462181,9.743081,1174682m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-          Tabiii
-        </a>
+  </section>
 
-        
-
-      </strong> <span class="review-stars">★★★★★</span>
-      <p>"We had a really great holiday at Villa Zara. We didn't miss anything. The view of the mountain was incredible and the large pool was also our highlight. Everything was very clean and every room smelled really good. The beds were unbeatably comfortable and the host Rea was very friendly and did everything to make us feel comfortable. There couldn't have been a better villa for us. Clear recommendation."</p>
-    </div>
-
-    <p class="more-reviews">
-      <a href="https://www.google.com/maps/place/Villa+Zara/@45.1308416,14.1019222,17z/data=!4m8!3m7!1s0x47634d7ce68eb081:0xdbda2ee71343e6d5!8m2!3d45.1308416!4d14.104111!9m1!1b1!16s%2Fg%2F11scjz2tyq?entry=ttu" target="_blank" rel="noopener noreferrer">
-        ⭐ See more reviews on Google Maps
-      </a>
-    </p>
-  </div>
-</section>
-  </main>
-
-  <footer>
-    &copy; 2025 Villa Zara Santalezi. Designed for elegance and comfort.
-  </footer>
-
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:istrianvillazara@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 </body>
 </html>
