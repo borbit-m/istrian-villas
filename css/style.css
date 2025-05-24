@@ -33,6 +33,34 @@ header {
   color: #007BFF;
 }
 
+.hero-background {
+  background-image: url('../images/background_pic.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.hero-overlay h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+}
+
 .villas-section {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 40px auto;
