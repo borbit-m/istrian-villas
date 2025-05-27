@@ -6,6 +6,9 @@
   <title>Istrian Villas</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
+<script src="js/availability.js"></script>
+
 <body>
   <header class="top-header">
   <div class="logo">
@@ -27,11 +30,11 @@
         <p>Experience comfort and luxury in the heart of Istria</p>
       </div>
       <div class="search-box">
-        <form>
-          <input type="date" name="checkin" placeholder="Check-in" required>
-          <input type="date" name="checkout" placeholder="Check-out" required>
-          <input type="number" name="guests" placeholder="Guests" min="1" required>
-          <button class="btn">Search</button>
+        <form id="search-form">
+          <input type="date" id="checkin" name="checkin" required>
+          <input type="date" id="checkout" name="checkout" required>
+          <input type="number" id="guests" name="guests" min="1" required>
+          <button type="submit" class="btn">Search</button>
         </form>
       </div>
     </section>
