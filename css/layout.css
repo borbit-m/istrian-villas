@@ -1,0 +1,50 @@
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.locations-section,
+.villas-section,
+.contact-section {
+  scroll-margin-top: 70px;
+}
+
+.villas-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin:  40px auto;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.locations-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.locations-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.page-bottom-spacer {
+  height: 350px;  /* or whatever height you want */
+  width: 100%;
+}

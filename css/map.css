@@ -1,0 +1,20 @@
+.map-container {
+  width: 95%;
+  max-width: 1200px;      /* optional max width */
+  margin: 2rem auto 0 auto; /* 2rem top margin, auto left/right to center */
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ensure iframe fills the container */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  display: block;
+}
